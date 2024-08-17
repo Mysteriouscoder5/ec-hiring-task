@@ -62,7 +62,7 @@ const Form = ({ type }: Props) => {
           </label>
           <input
             type="text"
-            className="bg-black border-2 border-white rounded-lg p-2 font-medium text-lg placeholder:opacity-25 outline-none"
+            className="bg-black border-2 border-white rounded-lg p-2 font-medium text-lg outline-none"
             placeholder="Enter your email"
             name="email"
             value={email}
@@ -75,7 +75,7 @@ const Form = ({ type }: Props) => {
           </label>
           <input
             type="password"
-            className="bg-black border-2 border-white rounded-lg p-2 font-medium text-lg placeholder:opacity-25 outline-none"
+            className="bg-black border-2 border-white rounded-lg p-2 font-medium text-lg outline-none"
             placeholder="Enter your password"
             name="password"
             value={password}
@@ -90,7 +90,8 @@ const Form = ({ type }: Props) => {
             type="button"
             className="text-lg cursor-pointer"
           >
-            Already registered ? <span className="text-orange-500">Login</span>
+            Already registered ?{" "}
+            <span className="text-orange-500 text-lg">Login</span>
           </Link>
         </div>
       ) : (
@@ -101,7 +102,7 @@ const Form = ({ type }: Props) => {
             className="text-lg cursor-pointer"
           >
             Not registered yet ?{" "}
-            <span className="text-orange-500">Sign up</span>
+            <span className="text-orange-500 text-lg">Sign up</span>
           </Link>
         </div>
       )}
