@@ -83,7 +83,7 @@ const Form = ({ type }: Props) => {
           />
         </div>
       </div>
-      {type === "registration" && (
+      {type === "registration" ? (
         <div className="mt-6">
           <Link
             href={"/login"}
@@ -91,6 +91,17 @@ const Form = ({ type }: Props) => {
             className="text-lg cursor-pointer"
           >
             Already registered ? <span className="text-orange-500">Login</span>
+          </Link>
+        </div>
+      ) : (
+        <div className="mt-6">
+          <Link
+            href={"/registration"}
+            type="button"
+            className="text-lg cursor-pointer"
+          >
+            Not registered yet ?{" "}
+            <span className="text-orange-500">Sign up</span>
           </Link>
         </div>
       )}
