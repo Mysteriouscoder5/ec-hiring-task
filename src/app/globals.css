@@ -2,6 +2,22 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer base {
+  * {
+    @apply text-body;
+  }
+  @screen md {
+    * {
+      @apply text-body-md;
+    }
+  }
+  @screen lg {
+    * {
+      @apply text-body-lg;
+    }
+  }
+}
+
 :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
